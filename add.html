@@ -1,0 +1,126 @@
+<!-- Add Item" page should be a form where I can add a new item by providing the below information
+ - Item Name
+ - Item type (Shirt, Pant, shoes, sports gear, etc.)
+ - Item Description
+ - Item cover Image
+ - Item additional images
+Upon adding a new item show a success message stating "Item successfully added" -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Add Items</title>
+    <link rel="stylesheet" href="add.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+
+<body>
+  
+    <!-- navigation -->
+<header>
+    <nav class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="nav-logo2.png ">
+            </div>
+
+
+            <!-- navbar headings -->
+            <div class="nav-items">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#form">Form</a></li>
+                <li><a href="#add-items">Add Item</a></li>
+        
+                  
+            </ul> 
+            </div> 
+
+
+            <!-- <div class="nav-button">
+                <button class = "nav-btn" id="loginBtn" href>
+                    <p><a href="view.html">View Item</a></p> </button>
+              </button>
+            </div>
+        </div> -->
+       
+         
+    </nav>
+
+    <!-- second nav  -->
+      <div class="row" id="about">
+            <div class="col-2">
+                <h1>Welcome to<span> 'Ajeeb' .</span><br></h1>
+                    <p>Here you can add items of your choice.</p>
+                    <a href="" class="btn">Explore Now 
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+            </div>
+            <div class="col-2">
+                <img src = "banner img.avif">
+            </div>
+
+
+        </div>
+
+    </header>
+
+    <!-- another content  -->
+
+<section class="form-heading-section">
+  <div class="heading" >
+    <h1>Fill the form given below.</h1>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<main>
+
+    <div class="form-container" id="form">
+      
+   <form id="addItemForm" class="glass-form">
+    <h2>Add Item</h2>
+    <label>Item Name: <input type="text" placeholder="Item Name" required id="itemName" class="border"/></label>
+    <label>Item Type:
+      <select id="itemType" class="border" required>
+        <option>Shirt</option>
+        <option>Pant</option>
+        <option>Shoes</option>
+        <option>Sports Gear</option>
+        <option>Books</option>
+        <option>Keychain</option>
+        <option>Soft Toys</option>
+      </select>
+    </label>
+    <label>Description: <textarea id="itemDesc" placeholder="Description "class="border"></textarea></label>
+
+    <label>Cover Image: <input type="file" accept="image/*" id="coverImage"class="border" required /></label>
+    <label>Additional Images: <input type="file" accept="image/*" multiple id="additionalImages"  class="border" /></label>
+    <button type="submit" id="add-items"><a href="view.html">Add Item</a></button>
+    
+  </form>
+  <p class="success" id="successMsg" style="display:none;">Item successfully added</p> 
+
+     </div>
+</main>
+
+
+
+
+    <script src="add.js"></script>
+</body>
+
+</html>

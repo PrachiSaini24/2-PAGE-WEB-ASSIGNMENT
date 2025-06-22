@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>View Items</title>
+  <link rel="stylesheet" href="view.css">
+
+</head>
+
+<body>
+  <div class="glass-background">
+<h1 class="styled-heading">View Items</h1>
+
+  <div id="itemsContainer"></div>
+
+  <div class="modal" id="itemModal">
+    <div class="modal-content">
+      <span class="close" onclick="document.getElementById('itemModal').style.display='none'">&times;</span>
+      <h2 id="modalName"></h2>
+      <p id="modalType"></p>
+      <p id="modalDesc"></p>
+      <div class="carousel" id="carousel"></div>
+      <button onclick="alert('Enquiry submitted!')">Enquire</button>
+    </div>
+  </div>
+
+  <a href="add.html" class="glass-button">Go to the home page</a>
+
+</div>
+
+
+
+
+
+
+  <script src="view.js"></script>
+</body>
+
+</html>
